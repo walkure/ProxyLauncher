@@ -3,7 +3,7 @@ ProxyLauncher
 Launch Applicaion with https?_proxy environment variable(s).
 Using Registry HKCU\3pf.jp\ProxyLauncher in order to save preferences.
 
-Dependecy: WTL(9.1.5321.Final)
+Dependency: WTL(9.1.5321.Final)
 
 License:MIT
 
