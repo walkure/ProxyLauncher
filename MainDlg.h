@@ -144,14 +144,8 @@ public:
 
 		PROCESS_INFORMATION procInfo;
 
-		if(CreateProcess(NULL,argv.GetBuffer(1024),NULL,NULL,false,
-			NORMAL_PRIORITY_CLASS,NULL,NULL,&stInfo,&procInfo))
-		{
-			WaitForSingleObject(procInfo.hThread,INFINITE);
-			CloseHandle(procInfo.hThread);
-			CloseHandle(procInfo.hProcess);
-		}
-
+		CreateProcess(NULL,argv.GetBuffer(1024),NULL,NULL,false,
+			NORMAL_PRIORITY_CLASS,NULL,NULL,&stInfo,&procInfo);
 		argv.ReleaseBuffer();
 
 	}
